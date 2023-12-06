@@ -1,0 +1,11 @@
+1. Oldal készítője: Marton Ádám 
+
+2. Weblap URL címe: 
+
+3. Rövid leírás: Az weblapot egy fiktív fesztiválról csináltam. Ez a fesztivál Alsóörsön a Pelso Kemping mellett található, ahol megoldható a szállás is.
+
+4. Saját JavaScript kód helye, ismertetése: A saját kódom külső fájlból (\scripts\script.js) van linkelve a jegyek.html oldalra. Egy árkalkulátor, mely a kiválasztott jegytípus (napok), szállástípus, foglalási időtartam és kedvezmények alapján kalkulál egy fizetendő összeget, ezt pedig az oldal alján lévő 'Végösszeg kiszámítása' gomb alatt jeleníti meg.
+
+5. Milyen egyedi fonttípust, vagy google web fontot használtam, és hol: 
+Az egész oldalon a google web fontok közül a Roboto Condensed-et használtam.
+

@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marton Ádám">
+    <meta name="description" content="A fiktív Balaton Fesztivál weboldala">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <link rel="icon" href="kepek/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Serif:opsz,wght@8..144,700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>BALATON FESZTIVÁL | LINEUP</title>
+    <script src="urlapvalidalas/jquery-3.7.1.min.js"></script>
+    <script src="urlapvalidalas/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#szavazas").validate({
+                rules: {
+                    eloadok: {
+                        required: true,
+                    },
+                    nev: {
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    jelszo: {
+                        required: true,
+                        minlength: 10
+                    },
+                    kozonsegszavazas: {
+                        required: true,
+                    },
+                },
+                messages: {
+                    eloadok: "  Írd be az előadót!",
+                    nev: "  Írd be a neved!",
+                    email: "  Egy valós email címet adj meg!",
+                    jelszo: {
+                        required: "  Adj meg egy jelszót!",
+                        minlength: "  Legalább 10 karakter hosszú jelszót adj meg!"
+                    },
+                    kozonsegszavazas: "  Fogadd el, hogy részt vegyél a szavazásban!",
+                },
+
+
+
+
+
+            });
+        });
+    </script>
+    <style>
+        label.error {
+            color:red;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="flex-container">
+        <img class="fejleckep" src="kepek/fejlec.jpg">
+    </header>
+    <nav class="nav-container">
+        <div class="navitems"><a href="index.html">A fesztiválról</a></div>
+        <div class="navitems"><a href="helyszin.html">Helyszín</a></div>
+        <div class="navitems"><a class="current" href="#">Lineup</a></div>
+        <div class="navitems"><a href="jegyek.html">Jegyek</a></div>
+        <div class="navitems"><a href="galeria.html">Galéria</a></div>
+
+    </nav>
+
+    <div class="flex-container">
+        <article class="lineups">
+            <div class="lineupdate">
+                <div>
+                    <h1>20. CSÜTÖRTÖK</h1>
+                </div>
+            </div>
+
+            <div class="lineup">QIMBY</div>
+            <div class="lineup">TOM ODELL</div>
+            <div class="lineup">MURA MASA</div>
+            <div class="lineup">HALOTT PÉNZ</div>
+            <div class="lineup">6LACK</div>
+        </article>
+        <article class="lineups">
+            <div class="lineupdate">
+                <div>
+                    <h1>21. PÉNTEK</h1>
+                </div>
+            </div>
+
+            <div class="lineup">TANKCSAPDA</div>
+            <div class="lineup">MAJKA</div>
+            <div class="lineup">MUSE</div>
+            <div class="lineup">SZA</div>
+            <div class="lineup">EMINEM</div>
+        </article>
+        <article class="lineups">
+            <div class="lineupdate">
+                <div>
+                    <h1>22. SZOMBAT</h1>
+                </div>
+            </div>
+
+            <div class="lineup">ELEFÁNT</div>
+            <div class="lineup">SIA</div>
+            <div class="lineup">LUKE COMBS</div>
+            <div class="lineup">TAYLOR SWIFT</div>
+            <div class="lineup">KENDRICK LAMAR</div>
+        </article class="lineup">
+        <article class="lineups">
+            <div class="lineupdate">
+                <div>
+                    <h1>23. VASÁRNAP</h1>
+                </div>
+            </div>
+
+            <div class="lineup">30Y</div>
+            <div class="lineup">ARMIN VAN BUUREN</div>
+            <div class="lineup">HARDWELL</div>
+            <div class="lineup">MACKLEMORE</div>
+            <div class="lineup">KANYE WEST</div>
+        </article>
+
+        <article class="validalando">
+            <form action="http://szamtud.uni-corvinus.hu/~blang/receive.php" method="post" id="szavazas" novalidate>
+                <p>
+                    <label>SZAVAZZ A KEDVENCEDRE! &nbsp;
+                        <input type="text" list="eloadok" name="eloadok" size="22" placeholder="Írd be ki a kedvenced nevét!">
+
+                        <datalist id="eloadok">
+                            <option value="QIMBY">
+                            <option value="TOM ODELL">
+                            <option value="MURA MASA">
+                            <option value="HALOTT PÉNZ">
+                            <option value="6LACK">
+                            <option value="TANKCSAPDA">
+                            <option value="MAJKA">
+                            <option value="MUSE">
+                            <option value="SZA">
+                            <option value="EMINEM">
+                            <option value="ELEFÁNT">
+                            <option value="SIA">
+                            <option value="LUKE COMBS">
+                            <option value="TAYLOR SWIFT">
+                            <option value="KENDRICK LAMAR">
+                            <option value="30Y">
+                            <option value="ARMIN VAN BUUREN">
+                            <option value="HARDWELL">
+                            <option value="MACKLEMORE">
+                            <option value="KANYE WEST">
+
+                        </datalist>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Neved: <input type="text" name="nev" placeholder="Minta János" size="27" maxlength="50"
+                            id="nev">
+                    </label>
+                    <br>
+                    <label>
+                        E-mailed: <input type="email" name="email" placeholder="emailem@mintamail.hu" size="24"
+                            id="email">
+                    </label>
+                    <br>
+                    <label>
+                        Jelszavad: <input type="password" name="jelszo" placeholder="jElszo123" size="24" id="jelszo">
+                    </label>
+                    <br>
+                    <label>
+                        Részt veszek a szavazásban:
+                        <input type="checkbox" name="kozonsegszavazas" value=""> 
+                         
+                    </label>
+                    <label>
+                        <br><br>
+                        <input type="submit" value="Kész">
+                    </label>
+                </p>
+                <form>
+        </article>
+
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        <hr>
+        Ez az oldal kizárólag tanulási célból jött létre és nem tükrözi a valóságot.
+    </footer>
+</body>
+
+</HTML>
