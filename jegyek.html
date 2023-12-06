@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marton Ádám">
+    <meta name="description" content="A fiktív Balaton Fesztivál weboldala">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <link rel="icon" href="kepek/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Serif:opsz,wght@8..144,700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>BALATON FESZTIVÁL | JEGYEK</title>
+
+</head>
+
+<body>
+    <header class="flex-container">
+        <img class="fejleckep" src="kepek/fejlec.jpg"
+            alt="A BALATON FESZTIVÁL hivatalos borítóképe, melyen egy tó látható éjszaka, felette tüzijátékokkal, a stégről egy lány nézi ezeket">
+
+    </header>
+    <nav class="nav-container">
+
+        <div class="navitems"><a href="index.html">A fesztiválról</a></div>
+        <div class="navitems"><a href="helyszin.html">Helyszín</a></div>
+        <div class="navitems"><a href="lineup.html">Lineup</a></div>
+        <div class="navitems"><a class="current" href="#">Jegyek</a></div>
+        <div class="navitems"><a href="galeria.html">Galéria</a></div>
+
+    </nav>
+
+    <div class="flex-container">
+
+        <form>
+            <article>
+                <div>
+                    <h1>JEGYEK / BÉRLETEK / SZÁLLÁS</h1>
+                </div>
+                <h3>Az alábbiakban kiválaszthatod, milyen jegyet/bérletet szeretnél:</h3>
+                <hr>
+                <label>
+                    <input type="radio" name="jegy" id="napijegy">
+                    Napijegy (19900 Ft)
+                </label>
+
+                <br>
+                <p> Mely napokra szeretnél napijegyet vásárolni?
+                <p>
+                    <label> Június 20.<input type="checkbox" name="juni20" id="juni20"></label>&nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                    <label>Június 21.<input type="checkbox" name="juni21" id="juni21"></label>&nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                    <label>Június 22. <input type="checkbox" name="juni22" id="juni22"></label>&nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                    <label>Június 23. <input type="checkbox" name="juni23" id="juni23"></label>&nbsp;&nbsp; &nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                    <hr>
+                    <label>
+                        <input type="radio" name="jegy" id="berlet">
+                        Bérlet (49900 Ft)
+                    </label>
+                    <hr>
+                <h3>Az alábbiakban kiválaszthatod, milyen szállást vennél igénybe:</h3>
+
+
+
+                <hr>
+                <label>Kérek szállást: <input type="checkbox" name="kerszallast" id="ksz"></label>
+                <br><br>
+                <table class="table_price">
+                    <tr>
+                        <td>Sátorhely</td>
+                        <td>Lakókocsi hely</td>
+                        <td>Jurta</td>
+                        <td>Mobilház</td>
+                    </tr>
+                    <tr>
+                        <td>4900 Ft/nap</td>
+                        <td>19900 Ft/nap</td>
+                        <td>29900 Ft/nap</td>
+                        <td>49900 Ft/nap</td>
+                    </tr>
+                </table>
+                <br>
+                <label for="szallas"> Kérlek válaszd ki a szállástípust a legördülő listából!<br></label>
+                <select name="szallastipus" size="1" id="szallas">
+                    <option value="satorhely"> Sátorhely</option>
+                    <option value="jurta"> Jurta </option>
+                    <option value="lakokocsi"> Lakókocsi hely</option>
+                    <option value="mobilhaz"> Mobilház</option>
+                </select>
+                <br>
+                <br>
+                <label>Mettől meddig kéred a szállást? (minimum érkezés: június 19., maximum távozás júnis 24.) <br>
+                    <br>Érkezés: Június <input type="number" min="19" max="23" step="1" id="tolszam">
+                    <br> </label>
+                <label>
+                    <br>Távozás: Június <input type="number" min="20" max="24" step="1" id="igszam">
+
+                </label>
+            </article>
+
+
+            <article>
+                <h4>Lássuk jogosult vagy-e kedvezménykere!</h4>
+                <hr>
+                <label> Melyik igaz rád?<br>
+                    <input type="radio" name="kedvezmeny" id="diak"> Diák vagyok(-25%)
+                    <br></label>
+                <label><input type="radio" name="kedvezmeny" id="corvinusos"> Corvinusos diák vagyok (-50%)
+                    <br>
+                </label>
+                <label><input type="radio" name="kedvezmeny" id="nem"> Nem vagyok diák
+                    <br>
+                </label>
+
+                <hr>
+                <h4>Milyen ajándékot kérsz a jegyed mellé?</h4>
+                <hr>
+                <label> Kérlek válaszd ki az ajándékod a legördülő listából!<br>
+                    <select name="ajandek" size="1" id="szallasok">
+                        <option value="kulacs"> Balaton Fesztivál kulacs</option>
+                        <option value="clothbag"> Balaton Fesztivál clothbag</option>
+                        <option value="pohar"> Balaton Fesztivál pohár</option>
+                        <option value="zaszlo"> Balaton Fesztivál zászló</option>
+                    </select>
+                </label>
+                <br>
+                <label>Milyen színben kéred az ajándékodat?
+                    <input type="color" name="szin">
+                </label>
+                <hr>
+                <div>
+                    <input type="button" value="Végösszeg kiszámítása" id="mybutton">&nbsp;&nbsp; &nbsp;&nbsp;
+                    <p id="veg"> </p>
+
+                    <input type="reset" value="Előröl kezdem">
+                </div>
+
+            </article>
+        </form>
+
+
+    </div>
+
+
+    <footer>
+        <hr>
+        Ez az oldal kizárólag tanulási célból jött létre és nem tükrözi a valóságot.
+    </footer>
+
+    <script src="scripts/script.js">
+
+    </script>
+</body>
+
+</HTML>
